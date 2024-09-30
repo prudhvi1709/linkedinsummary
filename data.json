@@ -1,0 +1,1102 @@
+[
+    {
+        "Project": "LLM Dialog",
+        "Description": "Allow LLMs to talk to each other, creating new body of knowledge",
+        "Industry": null
+    },
+    {
+        "Project": "Clinical Trials API Agent",
+        "Description": "Answer questions from relevant clinical trials from ClinicalTrials.gov using LLMs",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "JD Matcher",
+        "Description": "Analyze candidate resumes against a job description using LLMs to find the best matches",
+        "Industry": null
+    },
+    {
+        "Project": "Incidents Analysis",
+        "Description": "Identify the main drivers of IT incidents among trading applications. Analyze and recommend actions using LLMs",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "LinkedIn Summary",
+        "Description": "Generate personalized insights from LinkedIn profiles to help sales & marketing teams prepare for meetings",
+        "Industry": null
+    },
+    {
+        "Project": "PDF Summary",
+        "Description": "Summarize and create an abstract for a PDF chapter from a book",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "Report Gen",
+        "Description": "Automatically generate reports from data using templates and summarize with Gen AI",
+        "Industry": null
+    },
+    {
+        "Project": "Prompt Evals",
+        "Description": "Evaluate the quality of prompts and models. Use LLMs to improve their quality systematically",
+        "Industry": null
+    },
+    {
+        "Project": "LLM Personality",
+        "Description": "What personality traits to different LLMs exhibit? Explore the psychology of LLMs using the Big 5 test",
+        "Industry": null
+    },
+    {
+        "Project": "Hip Surgery Videos",
+        "Description": "Search and answer questions from videos of hip surgery using the visuals, despite lack of audio",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Image Extract",
+        "Description": "Extract structured information from images across industries using LLMs",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Deal News",
+        "Description": "Extract deal news (investor, company, deal size, PE/VC, etc.) from major deal news sites",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Network Explorer",
+        "Description": "A visual interface for knowledge graphs. Upload your CSV to see a knowledge graph",
+        "Industry": null
+    },
+    {
+        "Project": "WhatsLLM",
+        "Description": "A WhatsApp bot that can answer author questions about manuscript status (or anything else)",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "IT Chat",
+        "Description": "Finding the status of your IT service request via a Google Chat message (or Teams, WhatsApp, etc.)",
+        "Industry": null
+    },
+    {
+        "Project": "DataChat v2",
+        "Description": "Talk to your dataset - directly in the browser. It converts text to SQL and explains the answer.",
+        "Industry": null
+    },
+    {
+        "Project": "Contract Redlining",
+        "Description": "Analyze documents for errors and redline them for edits (like track changes in Word)",
+        "Industry": null
+    },
+    {
+        "Project": "aiKira Collab",
+        "Description": "Implement a comprehensive email management system to streamline communication, track client requests, and identify risk emails in the absence of a project manager",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "Alt Text",
+        "Description": "Generate Alt Text from images for accessibility",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "Chat Assist",
+        "Description": "Real-time assistants for customer support that summarizes, audits and suggests responses",
+        "Industry": null
+    },
+    {
+        "Project": "Auto Loan Defaults",
+        "Description": "Identify key factors contributing to auto loan defaults and DPD to inform risk management and collections strategies",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Video Search",
+        "Description": "Search videos with plain text. Videos were segmented at keyframes and described along with the objects.",
+        "Industry": "Media"
+    },
+    {
+        "Project": "Paper Retractions",
+        "Description": "Analyze the top reasons for paper retractions and the authors of paper-mill articles",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "Grading Assistant",
+        "Description": "Automatically evaluate subjective answers based on a grading guide with feedback",
+        "Industry": "Education"
+    },
+    {
+        "Project": "News Extraction",
+        "Description": "Extract text/news from news articles/links",
+        "Industry": null
+    },
+    {
+        "Project": "Blimp",
+        "Description": "Extract relevant data points from 2,000 ESG documents using rule engines, ML models and LLMs",
+        "Industry": null
+    },
+    {
+        "Project": "Form Extraction",
+        "Description": "Extract financial data from Form LP6, 5500, Capital Call & other financial forms using rule engines, ML models and LLMs",
+        "Industry": null
+    },
+    {
+        "Project": "Captcha Demo",
+        "Description": "Extract content from websites protected by captchas",
+        "Industry": null
+    },
+    {
+        "Project": "Hitch Wharf",
+        "Description": "Extract financial data from company annual reports",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Web Monitor",
+        "Description": "Monitor IAPD website for new filings and changes to existing filings",
+        "Industry": null
+    },
+    {
+        "Project": "Entity Extraction New",
+        "Description": "Web monitoring with subscription and entity extraction using LLM Models",
+        "Industry": null
+    },
+    {
+        "Project": "Transcription",
+        "Description": "Transcribe call recordings and diarize them to identify call sentiment",
+        "Industry": null
+    },
+    {
+        "Project": "Call Emotion",
+        "Description": "Identify the emotion expressed by customers during a call and respond appropriately",
+        "Industry": null
+    },
+    {
+        "Project": "Work Interactions",
+        "Description": "Explore which teams interact the most and least and plan facilities accordingly",
+        "Industry": null
+    },
+    {
+        "Project": "Cyber Risk Analysis",
+        "Description": "The Threat Research Hub allows risk analysts to explore cyber threats with advanced analysis",
+        "Industry": null
+    },
+    {
+        "Project": "Fish Counter AI",
+        "Description": "Count the number of fish by species to empower sustainable marine management",
+        "Industry": "Government"
+    },
+    {
+        "Project": "Distribution Cost Simulation",
+        "Description": "Identify where distribution cost can be reduced and what levers have most impact",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Complaints Closure",
+        "Description": "Generate closure letters for customer service complaints",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Novasense",
+        "Description": "Code-first agent framework for seamlessly planning and executing data analytics tasks",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Synthetic data",
+        "Description": "Generate synthetic data for use in anonymization in clinical trials",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "JD Evaluator",
+        "Description": "Evaluate a job description based on clarity of role, attractiveness, diversity, etc.",
+        "Industry": "Human Resources"
+    },
+    {
+        "Project": "Image Explore",
+        "Description": "Classify images and cluster them by similarity at low cost using image embeddings",
+        "Industry": null
+    },
+    {
+        "Project": "Voice Transcripts",
+        "Description": "Transcribe and summarize customer service calls to find unresolved issues and audit quality",
+        "Industry": null
+    },
+    {
+        "Project": "Contract Analysis",
+        "Description": "Explore what terms are present (or absent) in any contract, reducing risks",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "Spreadsheet LLM",
+        "Description": "Bring the power of LLMs to spreadsheets. Drag & drop AI-powered formulas",
+        "Industry": null
+    },
+    {
+        "Project": "Card Transactions",
+        "Description": "Which card transactions have the highest fraud? Explore with Insight Tree",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Email AI Agent",
+        "Description": "Summarize and draft responses to customer support emails using LLMs",
+        "Industry": null
+    },
+    {
+        "Project": "LLM Pricing",
+        "Description": "Which LLMs are the best value for money? Explore the best and worst by cost and quality",
+        "Industry": null
+    },
+    {
+        "Project": "Video Highlights",
+        "Description": "Personalize video and podcast transcripts to financial advisors using their portfolio and interests",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Policy Search",
+        "Description": "Ask questions about Learningmate's HR, IT or admin policies. Get answers with references",
+        "Industry": null
+    },
+    {
+        "Project": "LLM Classifier",
+        "Description": "Categorize documents into topics cheaply using embeddings",
+        "Industry": null
+    },
+    {
+        "Project": "LLM Favorite Numbers",
+        "Description": "Discover the biases in LLMs by asking them to guess a random number. 42 is very popular!",
+        "Industry": null
+    },
+    {
+        "Project": "FMCG Sales",
+        "Description": "Review financial performance as interactive editable PowerPoint slides created from data",
+        "Industry": "Retail & CPG"
+    },
+    {
+        "Project": "TC360",
+        "Description": "A survey-based visual story for the World Bank to explore the impact of technology on innovation",
+        "Industry": "Government"
+    },
+    {
+        "Project": "Biomolecule Papers",
+        "Description": "Answer questions based on each and every one of the 5,000 biomolecule paper abstracts on Arxiv.",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "Credit Card Complaints",
+        "Description": "Search over 4,000 consumer complaints about credit cards in Q1 2024 to understand the most common issues and resolutions.",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Global O&G Reporting",
+        "Description": "Explore the sustainability themes covered by oil & gas companies like BP, CNPC, ExxonMobil, Shell, etc.",
+        "Industry": "Energy"
+    },
+    {
+        "Project": "Insight Tree",
+        "Description": "Find why you missed targets. Zoom to that exact micro-segment in one click.",
+        "Industry": null
+    },
+    {
+        "Project": "Visualize Hallucinations",
+        "Description": "Understand how LLMs work and learn how to detect hallucinations automatically",
+        "Industry": null
+    },
+    {
+        "Project": "10K Filings Chat",
+        "Description": "Chat with the 10K filings of Amazon, Apple, Cisco, Dell, Google, IBM, Intel, Microsoft, NVIDIA, and Tesla.",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Insider Intelligence",
+        "Description": "DocSearch: Use Gen AI to improve quality of search and summarization across 7,000 published articles.",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "Gen AI Maturity",
+        "Description": "Answer 15 questions. Benchmarks your Gen AI adoption with peers. Discover areas to focus.",
+        "Industry": null
+    },
+    {
+        "Project": "Responsible AI Proxy",
+        "Description": "Allow developers to securely access any LLM via a single proxy and audit usage",
+        "Industry": null
+    },
+    {
+        "Project": "Research Integrity",
+        "Description": "Uncover paper-mill articles. Improve research quality. Reduce risk from fraudulent authors.",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "VARA rulebook",
+        "Description": "Technology and Information Rulebook of the Dubai Virtual Assets and Related Activities Regulations 2023 (VARA)",
+        "Industry": "Government"
+    },
+    {
+        "Project": "LLM Excel",
+        "Description": "An Excel formula, LLM(), that talks to ChatGPT and you can drag across cells",
+        "Industry": null
+    },
+    {
+        "Project": "VoiceLLM",
+        "Description": "Talk to ChatGPT. Proves our ability to recognize speech in real-time and reply with speech.",
+        "Industry": null
+    },
+    {
+        "Project": "Impact Report",
+        "Description": "Explores Rivian's first Impact Report covering initiatives and accomplishments in 2022.",
+        "Industry": null
+    },
+    {
+        "Project": "HR Data Chat",
+        "Description": "A conversational BI interface with HR data (FTEs, Hiring, Termination).",
+        "Industry": null
+    },
+    {
+        "Project": "Straive ENPS",
+        "Description": "Feedback from Straive employee survey on what's positive and what can be improved.",
+        "Industry": null
+    },
+    {
+        "Project": "Publisher feedback",
+        "Description": "Suggestions from customers to publisher on what corrective and preventive action is required",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "Jury Verdict",
+        "Description": "Deriving insights from verdicts in legal cases through entity extraction and summarization",
+        "Industry": null
+    },
+    {
+        "Project": "News-Classification, Summarization",
+        "Description": "Classification, summarization and entity recognition from financial news",
+        "Industry": null
+    },
+    {
+        "Project": "Customer Service - Speech to text ",
+        "Description": "Customer call converted to text with sentiment analysis on platform enabling workflow with Expert in loop",
+        "Industry": null
+    },
+    {
+        "Project": "Chemical Extraction ",
+        "Description": "Excerption of chemical properties from scientific journals",
+        "Industry": null
+    },
+    {
+        "Project": "Bill of Lading",
+        "Description": "Digitizing and deriving attributes of a BOL from pdf/ image",
+        "Industry": null
+    },
+    {
+        "Project": "Forms - LP6, 5500, Capital Call, Invoice ",
+        "Description": "Derive data insights from financial forms such as LP6, 5500, Capital Call, Invoice by entity data extraction",
+        "Industry": null
+    },
+    {
+        "Project": "Property Documents",
+        "Description": "Derive data insights from property documents like mortgages and deeds",
+        "Industry": null
+    },
+    {
+        "Project": "ESG on SPARK.AI",
+        "Description": "Deriving ESG insights from documents, news, etc. through entity data extraction",
+        "Industry": null
+    },
+    {
+        "Project": "Export Import Custom Audit Checks",
+        "Description": "Performing auto audit checks on shipments with 100% coverage",
+        "Industry": null
+    },
+    {
+        "Project": "Author Contracts analysis",
+        "Description": "Derive insights and perform analysis on author contracts for publishers",
+        "Industry": null
+    },
+    {
+        "Project": "Company Data",
+        "Description": "Providing company data and insights dashboard",
+        "Industry": null
+    },
+    {
+        "Project": "Customer Service Interaction QC",
+        "Description": "Evaluate customer service interactions \u2013 calls, emails and chats for quality of service through 100% coverage by AI",
+        "Industry": null
+    },
+    {
+        "Project": "Company data- News, Forms, Fund/Firm ",
+        "Description": "Building company and fund profile by extraction and collating information from  sources such as \u2013 News, Forms, public websites \u2013 SEC, etc.",
+        "Industry": null
+    },
+    {
+        "Project": "G20",
+        "Description": "Explore the topics discussed in the G20 2023 summit and what BMGF goals they addressed.",
+        "Industry": "Government"
+    },
+    {
+        "Project": "Patent Litigation",
+        "Description": "Find which companies file patent suits against who, who hires which legal firm, and who wins.",
+        "Industry": "Legal"
+    },
+    {
+        "Project": "Topic Analysis",
+        "Description": "Analyze Amazon reviews of Quaker Oats to see what customers like / dislike",
+        "Industry": "Retail & CPG"
+    },
+    {
+        "Project": "Interactions",
+        "Description": "See who interacts most with others in Gramener on email, calendar, and Teams.",
+        "Industry": null
+    },
+    {
+        "Project": "Cost Command Center",
+        "Description": "Establish Goals for Business KPIs. 7% Improvement in cost target achievement",
+        "Industry": "Retail & CPG"
+    },
+    {
+        "Project": "Skills Radar",
+        "Description": "Explore the Gramener technology stack and employee skills against the stack.",
+        "Industry": null
+    },
+    {
+        "Project": "Code Quality",
+        "Description": "Track code activity, build errors and reuse of components.",
+        "Industry": null
+    },
+    {
+        "Project": "Calendars",
+        "Description": "Do employees respond to calendar invites on time?",
+        "Industry": null
+    },
+    {
+        "Project": "GPAI Abstracts",
+        "Description": "Explore the abstracts submitted to the GPAI Summit 2023 Research Symposium, and which AI topics they addressed the most",
+        "Industry": "Publishing"
+    },
+    {
+        "Project": "Process Monitor",
+        "Description": "Predict whether a tablet manufacturing process will yield fine powder (good) or coarse",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Contact Tracing",
+        "Description": "Identify which employees are in contact with others and who is at risk if one is infected",
+        "Industry": null
+    },
+    {
+        "Project": "Financial Drivers",
+        "Description": "Automatically annotate financial statements to understand what's changed and why",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Vendor Consolidation",
+        "Description": "Find opportunities to consolidate costs and drive economies of scale in procurement",
+        "Industry": "Manufacturing"
+    },
+    {
+        "Project": "Service Requests",
+        "Description": "Discover where a service request process is slow and the biggest drivers of delay",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Advertiser Clustering",
+        "Description": "Use advertisers\u2019 purchase behavior across channels to cluster into 9 distinct segments",
+        "Industry": "Media"
+    },
+    {
+        "Project": "Supply Bottlenecks",
+        "Description": "Identify potential paths leading to high costs in the supply chain network ",
+        "Industry": "Retail & CPG"
+    },
+    {
+        "Project": "IP Analysis",
+        "Description": "Explore organizations, patent categories and countries. Find research areas and acquisition targets.",
+        "Industry": "Airlines"
+    },
+    {
+        "Project": "Indian Elections",
+        "Description": "Use real-time election data to stream results on national television for anchors to present",
+        "Industry": "Media"
+    },
+    {
+        "Project": "Cargo Delay",
+        "Description": "Simulate Process Changes Impact. 95% Transit SLA achieved",
+        "Industry": "Airlines"
+    },
+    {
+        "Project": "When to Invest",
+        "Description": "Rich interactive visualization to identify trends in investing patterns between 1-5 years",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Amcor - Global Spend and Saving Dashboard",
+        "Description": "The Client has a worldwide presence in the packaging industry across multiple products, which manufactures in house as well as buy packaging materials across the world\u200b and wanted to consolidate supplier scores with half the effort\u200b.",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Amcor - Power BI Project - Sustainability",
+        "Description": "The Client has a worldwide presence in the packaging industry across multiple products, which manufactures in house as well as buy packaging materials across the world\u200b and wanted to consolidate supplier scores with half the effort\u200b.",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Bosch - Advisory Services - Advanced Analytics",
+        "Description": "The organization wanted to chart out a data roadmap with a fair mix of BI & advanced analytics initiatives to achieve their data-led goals",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "USCS - Intelligent appointment scheduling",
+        "Description": "Gramener identified that scheduling appointments based on order complexities, warehouse load would give better Turn Time.",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Lynxus - BOL - Data Extraction",
+        "Description": "The objective was to reduce BOL processing time and handle larger volumes at lower operational costs",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "EDHEC Geospatial Shapes",
+        "Description": "The objective was to generate precise polygons and labels for a diverse range of private and public infrastructures, inclusive of their sustainability data",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "DPD - Capacity Planning",
+        "Description": "The objective was to develop sophisticated models for capacity planning and\u00a0use data driven method for choosing \u00a0pick-up and drop-off points",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Customs AI Audit",
+        "Description": "The objective was to implement an AI system for complete coverage to ensure compliance with custom authorities with precise verification of HS codes, weight, value, origin, and prohibited items. Also, streamline operations through advanced technologies for efficient cross-border parcel movements.",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Customer Service QC",
+        "Description": "The objective was to enhance customer service by obtaining comprehensive performance data and train & coach agents on specific skills.",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "LLM COE",
+        "Description": "The objective was to scale up the team with LLM and AI architects and developers to help with the customer\u2019s current operational challenges",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "ITC - Packaging Downtime",
+        "Description": "A leading FMCG manufacturer aims to enhance operational efficiency and minimize packaging machine downtime through the implementation of a data-driven methodology and instill a culture of continuous improvement in the packaging process",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Dr. Reddys - Analytics COE",
+        "Description": "Business objective was\u00a0to\u00a0improve the yield quantity\u00a0of the Drug\u00a0product manufacturing\nThree months of historical data were\u00a0available",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Coca Cola - Reducing Manufacturing cost",
+        "Description": "A global bottling organization wanted to explore opportunities for cost rationalization and make operations across units more efficient & agile",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Intel - Road Safety App Revamp",
+        "Description": "Take the Smart Mobility solution to the next level by creating an unified view for distributors, service owners and other stakeholders\u200b",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Target- Retail Supply Chain",
+        "Description": "A leading retailer wanted to identify operational\u00a0bottlenecks in transportation of products from\u00a0manufacturers / suppliers (vendor partners) to DCs /\u00a0warehouses all the way to the stores covering the\u00a0entire supply chain network",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "RODO- Develop image processing models",
+        "Description": "Improve the privacy of used car listings by masking number plates.\u200b\nStandardize the appearance of all images to reflect RODO's branding, which involved removing extraneous background elements and dealer-specific details.",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Global Airline- Cargo Delay",
+        "Description": "Identify delay factors in cargo delivery.\nCreate a what-if model to optimize processes and meet SLAs.",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Colgate - Advisory Engagement",
+        "Description": "The sales & marketing team wanted to tap into the power of  D&A and identify impactful use cases to achieve $1bn in revenue",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Colgate - Domo Dashboards",
+        "Description": "The sales & marketing team wanted to tap into the power of  D&A and identify impactful use cases to achieve $1bn in revenue",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Horizon Services - Advanced Analytics Products",
+        "Description": "A leading US HVAC installation and Services company wanted to optimize the discount they provide at point of sale for each customer. The goal was to bring in pricing and discounting standardization and improve margin. ",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "ITC - Water Mix Model",
+        "Description": "Data Driven Approach \u2013 which suggests optimal water addition \u2013 to attain the right moisture level in FG",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "TVS Motor - Intelligence Command Center",
+        "Description": "The client\u2019s business objective was to automate the reporting mechanism with relative visualization, insights and collaboration feature. The initial scope was to incorporate these features for Market Share KPI.",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Continental - Smart Quote Application",
+        "Description": "To create a one stop solution for bid related emails by powering application with AI/ML solution to extract KPIs from E-mails and predict Price range for them",
+        "Industry": "Logistics and Supply Chain"
+    },
+    {
+        "Project": "Privacy AI  (ECM Redaction / Document Anonymization)",
+        "Description": "Anonymization of confidential data is a critical regulatory compliance process in Pharma companies. ",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Parkway Pantai - BI Modernization",
+        "Description": "A leading hospital do not have a streamline process and platform to help them bring out insights regularly.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "DRL Scorecard Visualization",
+        "Description": "Organization was unable to improve yeild quantity and wanted to improve process areas for different compounds ",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Apollo Hospitals - Power BI Design Engagement",
+        "Description": "The existing BI Dashboard was data heavy & difficult to interpret in single go,",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Novartis - SCAI Entity Extraction",
+        "Description": "The organization was facing challenges with Older subsystem repository of documents with nonexistent metadata management.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Alcon - Data Science Services",
+        "Description": "Client was looking for platform to improve Reorder rate of MARLO named platform",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Novartis - ECM Redaction & Anonymization Ph1",
+        "Description": "Organization was having great difficulty in handling unstructured data and redaction process turnaround time was high",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Dr Reddys - Advanced Analytics Platform",
+        "Description": "DRL wanted to create a platform for users to login, analyze various production parameters and improve the yield so that the output is usable and more productive.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Eagle Genomics - Custom Solution",
+        "Description": " The organization had difficulty with text mining application in accessing complex information",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Thermofisher - PowerBI Dashboards",
+        "Description": "Business Leaders have poor visibility into Sales Funnel\u200b\nDifferent divisions operate in silos\u200b\nLack of centralized information center to make quicker decisions \u200b\nPoor Data Hygiene leading to inaccurate budgeting forecasts\u200b\nLack of information about sales order win and loss reasons and customer history\u200b",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "J&J Medtech phase I",
+        "Description": "The Organization was challenged with deciding the right approach for measuring value for digital transformation",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Trusted Translations - TranslateLaw",
+        "Description": "need to find ways to decrease the need for extensive manual reviews and labor to enhance document quality.\u200b",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Clarivate - Clinical Trial Data Enrichment",
+        "Description": "A leading drug discovery intelligence provider wanted to develop an automated solution to collect, identify, and enrich clinical trial locations across 20 countries addressing the challenges of inconsistent data, manual verification delays, and inefficiencies in trial detail identification.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "WebMD Drug Monographs ",
+        "Description": "Inconsistent and manual processes for collecting product characteristic documents, laborious extraction of drug data from regulatory agency documents, and time-consuming verification processes hindered efficient drug monograph creation and data accuracy.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Unified Indexing",
+        "Description": "A leading cheminformatics solution provider aimed to automate data curation, tackling manual searches across scientific disciplines to enhance turnaround times, reduce operational costs associated with large chemical data volumes, and broaden coverage of chemical information for improved research and development outcomes.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "WebMD International Physician Database",
+        "Description": "A leading health information services provider encountered obstacles in collecting comprehensive physician data from diverse international sources, struggling with non-scrapable websites and incomplete records, highlighting the need for a reliable validation system to ensure the accuracy of physician information",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Elsevier Automated Drug Price Monitoring",
+        "Description": "A leading drug database provider found manual tracking of drug prices across multiple sources time-consuming and error-prone. The dynamic nature of rapidly changing prices and frequent introduction of new drugs exacerbated the difficulty, hindering the maintenance of current records and complicating efforts to ensure compliance with healthcare regulations.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": " Risk and Safety Analytics Platform",
+        "Description": "A leading regulatory compliance solutions and services provider faced challenges in post-market surveillance for medical devices due to time-consuming and error-prone manual risk identification, alongside inefficiencies in consolidating insights from FDA databases amidst fragmented data silos.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Exscientia Disease and Gene Annotation",
+        "Description": "An AI-driven pharmatech firm wanted to develop a high-quality training dataset to significantly accelerate the pre-clinical drug discovery stage. This involved meticulous annotation of biomedical article entities, requiring domain expertise to ensure precise identification and tackling the complexity of mapping biomedical terminology to standard ontology IDs.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Philips - Reducing equipment downtime",
+        "Description": "Multi-billion-dollar provider of innovative medical solutions in hospital and lab environments, e.g., x-ray machines, MRI machines, etc. plagued by high equipment downtime and adverse lap technician experience during repair interactions.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "CAS - Tech Transformation",
+        "Description": "A leading scientific publisher grappled with outdated 30-year-old legacy systems, hindering content delivery speed, while also dealing with complex curation workflows and content management due to diverse data. A mix of outsourced and in-house processes led to inconsistent service levels and inefficiencies.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Wiley Cochrane Library project",
+        "Description": "Leading provider of evidence-based healthcare sought to create a product that empowers clinicians with readily accessible and reliable answers to their clinical questions. This involved applying the PICO framework (Patient/Population, Intervention, Comparison, Outcome) to systematically analyze medical reviews and extract the best available research evidence.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Reaxys Journal, Reaxys English and Asian Patents ",
+        "Description": "Maintaining a leading database of chemical compounds used in pharmaceutical research involved manually extracting and entering information from over 400 scientific journals, requiring a large team of subject matter experts and extensive training. This manual process was time-consuming, prone to errors, and limited the scalability of the database.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "ES-Embase-Abstracting/Indexing",
+        "Description": "A leading biomedical information provider faced a significant challenge in manually assigning index terms to a vast collection of scientific documents for their medical database. The complex, multi-tiered content taxonomy with over 80,000 terms and the ever-growing volume of content created a bottleneck in maintaining the database and ensuring regulatory compliance.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Elsevier Evidence-based order sets",
+        "Description": "Bridging the gap between medical research and clinical practice is crucial for optimal patient care. A leading medical information provider faced the challenge of integrating high-quality evidence from diverse medical literature into physician order sets. This required a comprehensive literature review process to ensure the relevant findings informed clinical decision-making.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Optimizing supply chain efficiency",
+        "Description": "A leading pharma company in EMEA region was facing challenges with escalating warehouse, transportation,and administrative costs in their distribution system.These costs are eating into their profits and hindering\ntheir ability to remain competitive in the market.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Automated KOL evaluation tool ",
+        "Description": "Our client needed an automated KOL management solution that compared industry experts across parameters, including subject matter expertise, the sphere of influence, digital presence, etc.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Platform to optimize inventory management",
+        "Description": "A major consumer health organization with a varied product portfolio sold its products through a variety of channels, including Geodis, Walmart, Amazon, Smart In Transit, and Shipbob. The nature of the business caused demand to be volatile, making it difficult to track inventory and sales performance.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Analyzing call activity impact on sales performance for enhanced visibility",
+        "Description": "Client had no visibility on the relationships between call activity (2F, email, phone) to see what impact that has on sales.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Comprehensive analysis for optimized clinical trial design",
+        "Description": "A leading CRO identified that 20% of the effort in a clinical trial design was spent in gathering, comparing information on drugs, diseases , competitive landscape etc.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Candidate identification",
+        "Description": "Clinical research organizations spend time navgating a plethora of internal tools to identify potential candidates and to take them in a easy and data powered manner",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Masking Clinical Trial patient sensitive data",
+        "Description": "Clinical trial patient data is reviewed internally (company) & externally (regulatory agencies). \nOur client wanted to mask sensitive patient information as the errors in PHI and PII could result in costly lawsuits. Also, delays in clinical trial reports could risk $0.3 mn monthly penalties",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Data Analytics for service request delays",
+        "Description": "The IT & SM team of a large multinational wanted to understand the status of their service request delays, and the drivers of delay.\nThis would also drive the decision on whether service management would remain in-house.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Improve Document management system",
+        "Description": "Document Management systems require Pharma Officer writers to manually fill the product information by referring the documents before uploading the labelling documents\nDocuments need to be classified, based on their type and country. Additionally, 20+ Attributes were being filled manually sourced from various systems across languages_x000B_Yearly ~20,000 documents\u00a0are uploaded ",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Automation of clinical trial operations report - BI Visualization",
+        "Description": "A leading pharma company\u00a0wanted to\u00a0automate\u00a0their clinical trial operations reporting",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Automating Post market survey of medical devices",
+        "Description": "MedTech organization faced challenges in post-market surveillance for medical devices.\nManual risk identification was time-consuming and error-prone.\nInefficiencies in synthesizing insights from FDA databases and fragmented data silos.",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Personalized Prompts Engine  for sales reps ",
+        "Description": "Sales rep adherence to defined processes, Data Quality was a challenge for a generics organization \nThey were also looking for increased interaction with the team to guide behaviour of teams",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "RLD Aid for scientists",
+        "Description": "R&D department of a Pharma company wanted to aid scientists in quantifying original drug's excipient content, & decoding an innovator product's formulation parameters and find similarity with reference listed drug (RLD)\u00a0",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Golden batch  production support",
+        "Description": "A global drug manufacturer struggled to maintain high & consistent production of the Golden Batch",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "Predictive analytics for ensuring tablet quality and reduction in manual labour for machine setup",
+        "Description": "We helped a generic drug manufacturer reduce manual interventions needed for machine set up, that previously led to scrapped tablets (>10k+) and wasted efforts. ",
+        "Industry": "Pharma and Life Sciences"
+    },
+    {
+        "Project": "USCS Turn Time Simulation\u200b",
+        "Description": "The objective of this engagement is to statistically identify factors which impact Turn Time of a warehouse. \u200b\n\nGMs should be able to simulate Turn Time based on the identified factors. This is achieved by changing factor values using levers available on User Interface. \u200b",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Tolaram - Data Science and Visual Analytics",
+        "Description": "To scope out the effort and timelines for complex App environment to Tolaram\u2019s Auto Insurance business",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Duroflex - Data Coach Team & Execution Exp",
+        "Description": "to identify areas to improve in their production to reduce wastage and improve their Yield to global standards.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Shell - Customer Segmentation Project",
+        "Description": "Client team was segmenting customers based on volume but were keen to understand and segment the customers based on behavior.  They want to theorize what causes this behavior. But most importantly, they wanted to know how to deal with the segments.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Dell VOC Analysis",
+        "Description": "Gramener wanted to help client by making informed Product and Service choices through surveys that translate into better customer satisfaction which in turn results in revenue growth.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "P&G Project StarBoy",
+        "Description": "The client intends to drive business growth by utilizing the power of data analytics to visualize the performance of specific product portfolio for brands across Japan and Philippines markets.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Aditya Birla DSF Performance",
+        "Description": "Gramener created a new dashboard as the current sales channel was currently using excel which requires time for analysis ",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "HDFC - Customer Service Dashboard",
+        "Description": "Gramener wanted to help client by reducing customer complaints and provide better business insights",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "NPCI - Data Analytics and Visualization",
+        "Description": "The client needed help in evaluating the operational drivers behind its strategic objectives.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "NPCI - Data Analytics and Visualization",
+        "Description": "The client needed help in evaluating the operational drivers behind its strategic objectives.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Star Content Analytics",
+        "Description": "The client was unsure of the approach as they had tried everything based on their experience.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "WRS Smart Zoo - Animal Detection",
+        "Description": "The main aim was to automate or semi-automate the manual process of species detection & counting which as a time-consuming  process (It can take up to 94 hours in a week).",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "SEEDS Phase 1\u200b",
+        "Description": "An NGO working in post natural disaster relief and recovery space was exploring ways at minimizing the damaged caused due to disasters like Cyclone.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Loughs Agency - Fish Species Recognition & Counting",
+        "Description": "Gramener leveraged real-time object detection techniques to detect and identify the Salmon & Sea Trout fish types captured using underwater camera traps.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Microsoft - AI4E",
+        "Description": "Philanthriopy wing of a leading tech giant took an initiative to empower people/organizations across the world with the tools and methodologies to  protect communities by pioneering the use of AI for Social Good. ",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "DELL - HO Engineering Dashboards",
+        "Description": "Gramener to built an interactive dashboard with a Program and Disease wise view ",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "AMAT - AGS Dashboard",
+        "Description": "BIM Team wanted to re-design their existing platform to address challenges like Inconsistent Information flow, Redundant Data Assets, User Experience, Scalability and Configurability.\u200b",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Micro Focus - Cyber Res Galaxy Data Storytelling",
+        "Description": "To strengthen their presence in cyber-security domain\u200b",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Retrieving data. Wait a few seconds and try to cut or copy again.",
+        "Description": "To create a platform that detect high land surface temperature (LST) hotspots in the city of Calgary and also evaluates how man-made structures impact LST\u200b",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "HDFC \u2013 BO Dashboard Maintenance",
+        "Description": "Objective was to develop two\u00a0dashboards for the Customer Service and Sales teams",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Rodo - Develop Image Processing Models",
+        "Description": "Need to process images and automate number plate detection of cars",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Evergreen - AI for Resilient Cities \u2013 Urban Heat Islands Mapping",
+        "Description": "To Create A Spatially Aware Tool That Tells The Story Of Heat Waves \u200b",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "DET Vault-X Command Center",
+        "Description": "To build a Command Center that integrates data across key Pillars for Visitors, Hotels, Airlines & Experience. Command Center utilizes the Vault-X Room of three large screens sections setup to present a visually advanced view/ navigation for key data pillars.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "AGTHIA - Crop Yield Optimization",
+        "Description": "understanding the impact of environmental parameters on the crop produce and growth/degrowth of farm areas was on their priority to understand the lay of the land for date fruit across the region. \u200b",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Eu Yan Sang - Data & Analytics Journey",
+        "Description": "To reduce previous Data lake by the other vendor used to incur",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Ideaz Factory - Media Analytics Product",
+        "Description": " Platform has helps users to understand what are the Pain points that needs to be addressed, which Media publication is vocal about the achievements and what topics to pick to gain high visibility.\u200b",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Benchwick Wood Plank Design Generation",
+        "Description": "Client was looking for a solution that could create multiple Wood designs/patterns given one input design. This would aid the designers in their day-to-day work of creating multiple similar designs to complete the flooring designs required for each order.\u200b",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Oliver Wyman - Optimizer UI",
+        "Description": "To develop a Web UI for Production Optimizer Tool to be used by Rust-Oleum for scheduling their production plans, to increase productivity by optimally using plants and lines.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Dubai Tourism - Command Center and Mobile App",
+        "Description": "Seeks to identify Emerging Economic Sectors and enhance their expansion.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Evergreen Phase 3 \u2013 Peel Region Scenario ",
+        "Description": "To Create A Spatially Aware Tool That Tells The Story Of Heat Waves \u200b",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Eu Yan Sang - Power BI Development & Engineering",
+        "Description": "The goal now is to design Power BI dashboards for both their management and region-specific teams.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Manulife - Emission Impact of Cloud Migration",
+        "Description": "Tracking of Green House Gas Emission via Power BI Dashboard",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "EDHEC Geospatial Shapes",
+        "Description": "The institute strives to generate precise polygons and labels for a diverse range of private and public infrastructures, inclusive of their sustainability data.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "MSCI GenAI powered ESG Data Collection",
+        "Description": "- Extract, curate & structure ESG information from various company reports.\n- Automate process to reduce human effort on searching & extracting relevant data.\n- Complexity in diverse set of documents & types of data-points, limiting existing entity extraction models.\n",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Fitch ESG Data Collection",
+        "Description": "The Agency wanted to collect ESG data for ~1500 through various sources, including scraping of corporate websites and ensure quality checks and audit of collated data",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "HSBC Climate Risk Research",
+        "Description": "Client targeted to automate the process of capturing impact of climate risk on their business, including data collection, processing & delivery of data ensuring quality standards",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Microfocus - UX Design Consulting",
+        "Description": "Enabling Data Storytelling Competency within Design COE of a leading enterprise software provider",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Loughs Agency - Fish Species Recognition & Counting Ph II",
+        "Description": "Gramener leveraged real-time object detection techniques to detect and identify the Salmon & Sea Trout fish types captured using underwater camera traps.",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "DD - Capacity Retainer Model for Strategic Initiatives ",
+        "Description": "The objective was to create a single enterprise-wide source of truth by collating payment data from ~200 country feeds",
+        "Industry": "ESG and Technology"
+    },
+    {
+        "Project": "Payment Data Transformation & Management",
+        "Description": "The objective was to create a single enterprise-wide source of truth by collating payment data from ~200 country feeds",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Automated Policy Data Processing",
+        "Description": "The objective was to automate the policy issue and renewal process by extracting and validating information against property mortgage documents ",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "DHFL - Visual Storytelling",
+        "Description": "The objective was rolling out a day-wise cash balance forecast on weekly basis, that enables the company to maximize interest savings through optimal cash allocation",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "World Bank  - Fraud recognition",
+        "Description": "The objective was to communicate data stories from their economic development indicator data using visual analytics.",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Transactional and Validation Analysis",
+        "Description": "The objective was to apply controls that can quickly and accurately identify fraud transaction incidents and apply stringent regulatory controls",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Customer Analytics for increasing debt collection efficiency ",
+        "Description": "The objective was to implement a solution that increases collections, engagement and conversions, while reducing operational costs.",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Commercial Customers Onboarding and Financial Spreading automation",
+        "Description": "The objective was to develop an end-to-end process that reduces commercial customer onboarding times, without compromising on data accuracy",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Credit Card Fraud Claims Management",
+        "Description": "The objective was to \ufeff\ufeffrapidly ascertain \"True Fraud\u201c, ensure \ufeff\ufeffregulatory compliance and reduce charge backs, thereby minimizing losses",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Loan Data Transformation",
+        "Description": "The objective was to extract the data accurately and rapidly from several loan document templates using automation",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "Axis Bank  - Customer satisfaction",
+        "Description": "The objective was to improve customer satisfaction and agent performance by breaking customer data silos in the client\u2019s organization",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "ESG Reference Data Collection",
+        "Description": "A Leading Investment Research Firm was extracting ESG data for companies spread across multiple reports in diverse formats manually. This led to missing ESG metrics during collection, analyst bias for clear benchmarking and comparisons, and lack of traceability for audits",
+        "Industry": "Financial services"
+    },
+    {
+        "Project": "HNT - Food Price Monitoring",
+        "Description": "The objective was to curate competitor pricing data and normalize it against the client\u2019s product portfolio to enable optimal pricing and discount decisions",
+        "Industry": "Retail & CPG"
+    },
+    {
+        "Project": "MOR - Cannabis Taxonomy & Mapping",
+        "Description": "They wanted to automate the manual data collection and curation process from web scraping to data delivery",
+        "Industry": "Retail & CPG"
+    },
+    {
+        "Project": "Shopkick - Retail Store Location Monitoring",
+        "Description": "Wanted to automate manual processes to improve accuracy",
+        "Industry": "Retail & CPG"
+    }
+]

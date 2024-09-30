@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> LinkedIn Profile Summary </title>
+    <!-- End Documentation -->
+    <!-- Updated Bootstrap and added Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+      // Set the worker source to the CDN path
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+    </script>
+    <script type="module">
+      async function extractTextFromPDF(file) {
+          const pdf = await pdfjsLib.getDocument({ data: await file.arrayBuffer() }).promise;
+          let text = "";
+          for (let i = 1; i <= pdf.numPages; i++) {
+              const page = await pdf.getPage(i);
+              const content = await page.getTextContent();
+              const pageText = content.items.map(item => item.str).join(" ");
+              text += pageText + "\n";
+          }
+          return text;
+      }
+
+      async function fetchAIResponse(messages) {
+        const response = await fetch("https://llmfoundry.straive.com/openai/v1/chat/completions", {
+          method: "POST",
+          credentials: "include",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            model: "gpt-4o-mini",
+            messages: messages
+          }),
+        });
+        const result = await response.json();
+        if (result.error) throw new Error(result.error.message);
+        return result.choices?.[0]?.message?.content || "<p>No information available.</p>";
+      }
+
+      async function generateSummary(profileText, companyName) {
+        const profileSummary = await fetchAIResponse([
+          { role: "system", content: "Create a persona intelligence report, focusing on main skills, nature of work, responsibilites and present role based on this LinkedIn profile, which needed to be presented to the sales head of an analytics company. Make it short and crispy .Provide the output in HTML format with appropriate headings and paragraphs., dont show '''html''' in output" }, //change your prompt here if needed
+
+          { role: "user", content: profileText }
+        ]);
+
+        // Check if companyName is provided; if not, extract it from profileText
+        const companySummary = companyName ? await fetchAIResponse([
+          { role: "system", content: "Based on the company name provided, generate a brief summary about the company, including its main business, location, any AI & analytics news along with their new initiatives if they have any, and any other relevant details you can infer. Provide the output in HTML format.dont show ''html''' in the output" }, //change your prompt here if needed
+          { role: "user", content: `Company Name: ${companyName}` }
+        ]) : await fetchAIResponse([
+          { role: "system", content: "Extract the company name from the LinkedIn profile text and generate a brief summary about the company, including its main business, location, any AI & analytics news along with their new initiatives if they have any, and any other relevant details you can infer. Provide the output in HTML format.dont show ''html''' in the output" }, //change your prompt here if needed
+          { role: "user", content: profileText }
+        ]);
+
+        const cleanProfileSummary = profileSummary.replace(/^html\n|$/g, '');
+        const cleanCompanySummary = companySummary.replace(/^html\n|$/g, '');
+
+        return `
+          <div class="profile-summary">
+            <h2>Profile Summary</h2>
+            ${cleanProfileSummary}
+          </div>
+          <div class="company-summary">
+            <h2>Company Summary</h2>
+            ${cleanCompanySummary}
+          </div>
+        `;
+      }
+
+      // Add these functions for theme handling
+      const getStoredTheme = () => localStorage.getItem("theme");
+      const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
+      const getPreferredTheme = () =>
+        getStoredTheme() || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      const setTheme = (theme) =>
+        document.documentElement.setAttribute(
+          "data-bs-theme",
+          theme === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : theme,
+        );
+
+      function showActiveTheme(theme, focus = false) {
+        const themeSwitcher = document.querySelector(".dark-theme-toggle");
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+        document.querySelectorAll("[data-bs-theme-value]").forEach((element) => {
+          element.classList.remove("active");
+          element.setAttribute("aria-pressed", "false");
+        });
+        btnToActive.classList.add("active");
+        btnToActive.setAttribute("aria-pressed", "true");
+        const icon = btnToActive.querySelector('i').className.split(' ')[1];
+        themeSwitcher.innerHTML = `<i class="bi ${icon}"></i> Toggle theme`;
+        themeSwitcher.setAttribute("aria-label", `Toggle theme (${theme})`);
+        if (focus) themeSwitcher.focus();
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+          const form = document.querySelector("form");
+          const companyInput = document.querySelector("#company");
+          const pdfInput = document.querySelector("#pdf-upload");
+          const summaryArea = document.querySelector("#summary");
+          const loadingSpinner = document.querySelector("#loading");
+          const errorAlert = document.querySelector("#error");
+          const savePdfButton = document.querySelector("#save-pdf");
+
+          form.addEventListener("submit", async (e) => {
+              e.preventDefault();
+              summaryArea.innerHTML = "";
+              errorAlert.textContent = "";
+              loadingSpinner.classList.remove("d-none");
+
+              try {
+                  const pdfFile = pdfInput.files[0];
+                  const profileText = await extractTextFromPDF(pdfFile);
+                  const companyName = companyInput.value.trim() || null; // Use null if the input is empty
+                  const summary = await generateSummary(profileText, companyName);
+                  summaryArea.innerHTML = summary;
+              } catch (error) {
+                  errorAlert.textContent = `Error: ${error.message}`;
+              } finally {
+                  loadingSpinner.classList.add("d-none");
+                  document.getElementById("draft-email").classList.remove("d-none"); // Show Draft Email button
+              }
+          });
+
+          // Add event listener for the Save as PDF button
+          savePdfButton.addEventListener("click", () => {
+            const element = document.querySelector("#summary");
+
+            // Store the original styles
+            const originalBackgroundColor = element.style.backgroundColor;
+            const originalColor = element.style.color;
+
+            // Set default styles for PDF generation
+            element.style.backgroundColor = "white";
+            element.style.color = "black";
+
+            html2canvas(element).then(canvas => {
+              const imgData = canvas.toDataURL('image/png');
+              const pdf = new jspdf.jsPDF();
+              const imgProps = pdf.getImageProperties(imgData);
+              const pdfWidth = pdf.internal.pageSize.getWidth();
+              const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+              pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+              pdf.save("linkedin_profile_summary.pdf");
+
+              // Restore original styles
+              element.style.backgroundColor = originalBackgroundColor;
+              element.style.color = originalColor;
+            });
+          });
+
+          // Add theme initialization and toggle functionality
+          setTheme(getPreferredTheme());
+          showActiveTheme(getPreferredTheme());
+
+          document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+              const theme = toggle.getAttribute("data-bs-theme-value");
+              if (theme) {
+                setStoredTheme(theme);
+                setTheme(theme);
+                showActiveTheme(theme, true);
+              }
+            });
+          });
+          async function fetchDemoList() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const demos = await response.json();
+                return demos.map(demo => `${demo.Project}: ${demo.Description}`).join('\n');
+            } catch (error) {
+                console.error("Failed to fetch demo list: ", error);
+                return "No demos available."; // Fallback message
+            }
+          }
+
+          // Add event listener for the Draft Email button
+          document.getElementById("draft-email").addEventListener("click", async () => {
+              const pdfFile = pdfInput.files[0];
+              const profileText = await extractTextFromPDF(pdfFile);
+              const demoList = await fetchDemoList();
+              const emailPrompt = `
+                You are an Solution Consultant at Straive's Analytics & AI service line. You have to write a professional introductory email to senior executives at potential customers. I will provide the profile of the senior executive to you. Based on that write the email.
+                The instructions are as below:
+                • Write in professional manner
+                • Make it very personalized based on their resume that I will share
+                • Find out the common interest areas for the based on the profile and what Straive's Analytics & AI service line has to offer.
+                • ALWAYS Provide FIVE LLM use cases relevant for them:
+                  You are an expert business consultant. Given an industry, person's role and key responsibilities (available in the summary)
+                  - Demo: Mention the most relevant demos from the list below. Mention the EXACT demo name.
+                  - Benefits: Mention the benefits for their priorities, always include a specific relevant metric(with percentage) along with benifit of specific use case.
+                  Communicate briefly and concisely. Convey rich information for a professional business context.
+                  List of demos in Demo: Description format:
+                  ${demoList}
+                • Don't write long sentences and paragraphs and be concise and use bullet points where required.
+                • Don't have too much dramatic language
+              `;
+              // Show spinner
+              const spinner = document.getElementById("draft-email-spinner");
+              spinner.classList.remove("d-none");
+              const emailContent = await fetchAIResponse([
+                  { role: "system", content: emailPrompt },
+                  { role: "user", content: profileText }
+              ]);
+              // Hide spinner
+              spinner.classList.add("d-none");
+              // Display the email content in the designated div
+              const emailContentDiv = document.getElementById("email-content");
+              emailContentDiv.innerText = emailContent; // Set the email content as plain text
+              emailContentDiv.classList.remove("d-none"); // Show the email content div
+
+              // Show the Copy button
+              document.getElementById("copy-email").classList.remove("d-none");
+          });
+
+          // Add event listener for the Copy button
+          document.getElementById("copy-email").addEventListener("click", () => {
+              const emailContent = document.getElementById("email-content").innerText;
+              navigator.clipboard.writeText(emailContent).then(() => {
+                  // Create a notification element
+                  const notification = document.createElement('div');
+                  notification.className = 'notification';
+                  notification.textContent = "Email content copied to clipboard!";
+                  document.body.appendChild(notification);
+
+                  // Show the notification for 2 seconds
+                  setTimeout(() => {
+                      notification.remove();
+                  }, 2000);
+              }).catch(err => {
+                  console.error("Failed to copy: ", err);
+              });
+          });
+      });
+
+      // Add this to your existing JavaScript
+      document.addEventListener('DOMContentLoaded', function() {
+        const fileInput = document.getElementById('pdf-upload');
+        const fileLabel = document.querySelector('.custom-file-label');
+
+        fileInput.addEventListener('change', function() {
+          if (this.files && this.files.length > 0) {
+            fileLabel.textContent = this.files[0].name;
+          } else {
+            fileLabel.textContent = 'Choose PDF';
+          }
+        });
+      });
+    </script>
+    <style>
+      .custom-file-input {
+        display: none;
+      }
+      .custom-file-label {
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+        background-color: #343a40;
+        color: #fff;
+        border: 1px solid #6c757d;
+        border-radius: 4px;
+        transition: background-color 0.15s ease-in-out;
+      }
+      .custom-file-label:hover {
+        background-color: #23272b;
+      }
+      /* Add this new style for the company input wrapper */
+      .company-input-wrapper {
+        max-width: 400px; /* Adjust this value as needed */
+      }
+      #save-pdf {
+        margin-top: 20px;
+      }
+      .narrative {
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .notification {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #28a745; /* Green background */
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000; /* Ensure it appears above other content */
+        transition: opacity 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href=".">LinkedIn Profile Summary</a>
+
+        <!-- Theme toggle dropdown -->
+        <div class="position-relative" role="group" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <button class="dark-theme-toggle btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (auto)">
+            <i class="bi bi-circle-half"></i> <span class="d-lg-none ms-2">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" data-bs-theme-value="light"><i class="me-2 bi bi-sun-fill"></i> Light</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="dark"><i class="me-2 bi bi-moon-stars-fill"></i> Dark</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="auto"><i class="me-2 bi bi-circle-half"></i> Auto</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class ="container">
+    <h1 class="mt-5 text-center">LinkedIn Profile Summary</h1>
+    <div class="mx-auto my-5 narrative">
+        <p>LinkedIn Profile Summary is an <strong>LLM-powered tool</strong> that generates <strong>comprehensive insights</strong> from LinkedIn profiles and company information.</p>
+        <p>It analyzes profiles to provide <strong>detailed, personalized analysis</strong> in a user-friendly format.</p>
+        <p>Start by uploading your LinkedIn profile PDF below. Each profile is processed to extract <strong>key professional details</strong>. Click generate to see the <strong>LLM's analysis capabilities</strong>.</p>
+        <p>You can also <strong>enter company information</strong>. This app will analyze it and provide relevant insights based on the company context. Results appear in a <strong>structured format</strong>, which you can <strong>save as PDF</strong>.</p>
+    </div>
+
+    <div class="container mt-4">
+      <form>
+        <div class="mb-3">
+          <label for="pdf-upload" class="form-label">Upload LinkedIn Profile PDF</label>
+          <div>
+            <input type="file" id="pdf-upload" accept=".pdf" class="custom-file-input" required />
+            <label for="pdf-upload" class="custom-file-label">Choose PDF</label>
+          </div>
+        </div>
+        <div class="mb-3 company-input-wrapper">
+          <label for="company" class="form-label">Company Name</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-building"></i></span>
+            <input
+              type="text"
+              id="company"
+              placeholder="Enter Company Name"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <i class="bi bi-file-earmark-text me-2"></i>Generate Summary
+        </button>
+      </form>
+      <div id="loading" class="spinner-border text-info d-none mt-3" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="alert alert-danger d-none mt-3" id="error" role="alert"></div>
+      <h2 class="mt-4">Summary:</h2>
+      <div id="summary" class="border p-3 mt-3"></div>
+      <div class="d-flex justify-content-between align-items-center mt-3"> <!-- Flex container for alignment -->
+          <button id="draft-email" class="btn btn-info d-none">
+              <i class="bi bi-envelope me-2"></i>Draft e-mail
+              <span id="draft-email-spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+          </button>
+          <button id="copy-email" class="btn btn-secondary d-none"> <!-- New Copy button -->
+              <i class="bi bi-clipboard me-2"></i>Copy Email
+          </button>
+          <button id="save-pdf" class="btn btn-primary" style="margin-bottom: 25px;"> <!-- Assuming this is your Save as PDF button -->
+              <i class="bi bi-file-earmark-pdf me-2"></i>Save as PDF
+          </button>
+      </div>
+      <div id="email-content" class="border p-3 mt-3 d-none"></div>
+    </div>
+  </body>
+</html>
