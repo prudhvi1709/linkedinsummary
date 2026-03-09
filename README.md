@@ -32,3 +32,6 @@ This web application allows users to generate a summary of a LinkedIn profile an
 
 ## Authors 
 - Prudhvi - prudhvi.krovvidi@straive.com
+
+---
+> **This is Demo. contains no confidential data/IP**
